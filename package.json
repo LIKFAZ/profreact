@@ -23,6 +23,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://lifaz.github.io/profreact"
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +35,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
 }
